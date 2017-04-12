@@ -11,12 +11,17 @@ namespace SquareBoard
         static void Main(string[] args)
         {
             int size = 5;
-            for(int row=1;row<=size;++row)
+            for(int row=1;row<=5;++row)
             {
-                for(int col=1;col<=size;++col)
+                for(int col=1;col<=4;++col)
                 {
-                    Console.Write(" #");
+                  if(row%2==0)
+                    {
+                        Console.Write(" ");
+                    }
+                   Console.Write("# ");
 
+                        
                 }
                 Console.WriteLine(" ");
 
