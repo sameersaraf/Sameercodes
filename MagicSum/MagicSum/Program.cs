@@ -10,19 +10,30 @@ namespace MagicSum
     {
         static void Main(string[] args)
         {
-           // int i = Int32.Parse(Console.ReadLine());
-            string[] answer = new string[10];
-            for (int i = 0; i < answer.Length; i++)
+           // int number=0;
+            int sentinel = -1;
+            Console.WriteLine("enter a integer or enter -1 to exit");
+            int number = Int32.Parse(Console.ReadLine());
+            while (number != sentinel)
             {
-                answer[i] = Console.ReadLine();
-                if(answer==8)
-                {
-                    answer = answer + i;
-
-                }
-               
+                number = number + number;
+                
             }
-           // answer[i] = Console.WriteLine();
+            Console.WriteLine(number);
+
+
+            // int i = Int32.Parse(Console.ReadLine());
+            /*  string[] answer = new string[10];
+              for (int i = 0; i < answer.Length; i++)
+              {
+                  answer[i] = Console.ReadLine();
+                  if(answer==8)
+                  {
+                      answer = answer + i;
+
+                  }*/
+
         }
+        // answer[i] = Console.WriteLine();
     }
-}
+    }
