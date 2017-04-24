@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace DS_circullar_Q
 {
-    public struct CircularQueue
+    public static void Main()
     {
+        public struct CircularQueue
+    {
+
         public int Front;
         public int Rear;
         public int[] items;
